@@ -1,15 +1,46 @@
 # Drug Side Effect Prediction using Deep Learning
 
-This project builds a neural network to predict drug side effects using synthetic molecular features.
+## 📌 Project Overview
+This project builds a deep learning model to predict whether a drug may cause side effects based on molecular features.
 
-Technologies:
+The model uses a fully connected neural network built with TensorFlow and evaluates performance using classification metrics and ROC-AUC score.
+
+---
+
+## 🛠 Technologies Used
 - Python
 - Pandas
 - NumPy
-- TensorFlow
 - Scikit-learn
+- TensorFlow / Keras
 
-Model:
-- Fully connected neural network
-- Binary classification
-- Evaluated using ROC-AUC score
+---
+
+## 📊 Features Used
+- Molecular Weight
+- Lipophilicity
+- Toxicity Score
+- Binding Affinity
+
+---
+
+## 🧠 Model Architecture
+- Input Layer
+- Dense Layer (16 neurons, ReLU)
+- Dense Layer (8 neurons, ReLU)
+- Output Layer (Sigmoid)
+
+---
+
+## 📈 Evaluation Metrics
+- Accuracy
+- Classification Report
+- ROC-AUC Score
+
+---
+
+## 🚀 How to Run
+
+```bash
+pip install -r requirements.txt
+python drug_model.py
