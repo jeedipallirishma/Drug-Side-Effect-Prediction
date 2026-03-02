@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report, roc_auc_score
@@ -49,11 +50,31 @@ model.compile(optimizer='adam',
 # Step 5: Train Model
 model.fit(X_train, y_train, epochs=20, batch_size=32, verbose=1)
 
-# Step 6: Evaluate
+
+# Step 6: Plot Accuracy
+
+
+plt.plot(history.history['accuracy'])
+plt.title('Model Accuracy')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy')
+plt.savefig("accuracy.png")
+plt.close()
+
+# Plot Loss
+plt.plot(history.history['loss'])
+plt.title('Model Loss')
+plt.xlabel('Epoch')
+plt.ylabel('Loss')
+plt.savefig("loss.png")
+plt.close()
+
+# Step 7: Evaluate
 y_pred = model.predict(X_test)
 y_pred_class = (y_pred > 0.5).astype(int)
 
 print("Classification Report:")
 print(classification_report(y_test, y_pred_class))
+
 
 print("ROC-AUC Score:", roc_auc_score(y_test, y_pred))
