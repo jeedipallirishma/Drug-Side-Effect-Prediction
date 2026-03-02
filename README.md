@@ -39,7 +39,6 @@ The model uses a fully connected neural network built with TensorFlow and evalua
 
 ---
 
----
 
 ## 👩‍💻 Author
 Jeedipalli Rishma  
