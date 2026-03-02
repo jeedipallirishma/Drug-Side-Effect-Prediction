@@ -39,6 +39,15 @@ The model uses a fully connected neural network built with TensorFlow and evalua
 
 ---
 
+---
+
+## 👩‍💻 Author
+Jeedipalli Rishma  
+B.Tech – Data Science  
+Hyderabad, Telangana  
+Aspiring Junior Data Scientist / AIML Engineer  
+LinkedIn: https://linkedin.com/in/jeedipallirishma66bb3b334
+
 ## 🚀 How to Run
 
 ```bash
