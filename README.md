@@ -37,8 +37,19 @@ The model uses a fully connected neural network built with TensorFlow and evalua
 - Classification Report
 - ROC-AUC Score
 
+
+
 ---
 
+## 📊 Training Results
+
+### Model Accuracy
+![Model Accuracy](accuracy.png)
+
+### Model Loss
+![Model Loss](loss.png)
+
+---
 
 ## 👩‍💻 Author
 Jeedipalli Rishma  
