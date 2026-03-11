@@ -1,4 +1,4 @@
-# Drug Side Effect Prediction using Deep Learning
+# Drug Side Effect Prediction – Neural network model predicting drug side effects using TensorFlow.
 
 ## 📌 Project Overview
 This project builds a deep learning model to predict whether a drug may cause side effects based on molecular features.
